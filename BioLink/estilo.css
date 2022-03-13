@@ -1,0 +1,171 @@
+body {
+	background-color: #42A3F3;
+	overflow: hidden;
+}
+
+.all {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contenido {
+	height: 750px;
+	width: 750px;
+	background-color: #fff;
+	margin: auto;
+	flex-basis: 20em;
+	flex-grow: 1;
+}
+.cont-foto {
+	display: block;
+	text-align: center;
+	background-color: #42A3F3;
+
+}
+
+.foto {
+	position: relative;
+	height: 100px;
+	left: 1em;
+	border-radius: 50%;
+	top: 0px;
+	border: 3px solid #fff;
+
+}
+
+
+
+.botones {
+	background-color: #42A3F3;
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 71px;
+	text-align: center;
+	min-width: 100px;
+	min-height: 200px;
+}
+
+.botones a{
+	font-size: 71px;
+	border-bottom: 10px solid transparent;
+	transition-property: font-size border-bottom;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+	text-decoration: none;
+	color: black;
+
+}
+
+
+
+.botones a:hover {
+	font-size: 100px;
+	border-bottom: 2px solid #fff;
+}
+
+.burbuja {
+	background-color: inherit;
+	opacity: .3;
+	border-radius: 50%;
+
+	position: absolute;
+	bottom: -10%;
+
+
+	animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+	width: 80px;
+	height: 80px;
+	left: 5%;
+	animation-duration: 3s;
+	animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+	width: 100px;
+	height: 100px;
+	left: 35%;
+	animation-duration: 3.2s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+	width: 100px;
+	height: 100px;
+	left: 55%;
+	animation-duration: 3.2s;
+	animation-delay: 7s;
+}
+
+
+.burbuja:nth-child(4) {
+	width: 100px;
+	height: 100px;
+	left: 75%;
+	animation-duration: 3.2s;
+	animation-delay: 9s;
+}
+
+.burbuja:nth-child(4) {
+	width: 80px;
+	height: 80px;
+	left: 85%;
+	animation-duration: 3.2s;
+	animation-delay: 11s;
+}
+
+
+@keyframes burbujas{
+	0% {
+		bottom: 0px;
+		opacity: 0;
+	}
+
+	5% {
+		background-color: #fff;
+	}
+
+	50% {
+		opacity: .4;
+	}
+
+	100% {
+		bottom: 100vh;
+		opacity: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 800px) {
+	.botones a {
+		font-size: 61px;
+	}
+
+	.botones a:hover {
+		font-size:70px ;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.botones a {
+		font-size: 41px;
+	}
+
+	.botones a:hover {
+		font-size: 51px;
+	}
+}
+
+@media screen and (max-height: 850px) {
+	body {
+		overflow: visible;
+		overflow-x: hidden;
+	}
+
+
+
+
+}
