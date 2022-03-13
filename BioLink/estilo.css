@@ -139,7 +139,12 @@ body {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+	.all {
+		align-content: center;
+		overflow: hidden;
+	}
+
 	.botones a {
 		font-size: 61px;
 	}
@@ -147,9 +152,15 @@ body {
 	.botones a:hover {
 		font-size:70px ;
 	}
+
+
 }
 
 @media screen and (max-width: 360px) {
+	.all {
+		align-content: center;
+	}
+
 	.botones a {
 		font-size: 41px;
 	}
@@ -159,7 +170,11 @@ body {
 	}
 }
 
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 768px) {
+	.all {
+		align-content: center;
+	}
+
 	body {
 		overflow: visible;
 		overflow-x: hidden;
