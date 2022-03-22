@@ -1,5 +1,5 @@
 body {
-	background-color: #42A3F3;
+	background: linear-gradient(220.55deg, #5EE2FF 0%, #00576A 100%);
 	overflow: hidden;
 	overflow-x: hidden;
 }
@@ -10,9 +10,9 @@ body {
 }
 
 .contenido {
-	height: 750px;
-	width: 750px;
-	background-color: #fff;
+	height: 950px;
+	width: 950px;
+	background-color: transparent;
 	margin: auto;
 	flex-basis: 20em;
 	flex-grow: 1;
@@ -20,24 +20,27 @@ body {
 .cont-foto {
 	display: block;
 	text-align: center;
-	background-color: #42A3F3;
+	background: transparent;
+	margin: auto;
 
 }
 
 .foto {
 	position: relative;
 	height: 100px;
-	left: 1em;
 	border-radius: 50%;
-	top: 0px;
 	border: 3px solid #fff;
+	margin: auto;
 
 }
 
-
+.cont-botones {
+	background: #;
+	margin: auto;
+}
 
 .botones {
-	background-color: #42A3F3;
+	background: inherit;
 	list-style: none;
 	font-size: 71px;
 	text-align: center;
@@ -54,6 +57,7 @@ body {
 	transition-timing-function: ease-out;
 	text-decoration: none;
 	color: white;
+	margin: auto;
 
 }
 
@@ -61,7 +65,7 @@ body {
 
 .botones a:hover {
 	font-size: 85px;
-	border-bottom: 2px solid #000;
+	border-bottom: 4px solid #000;
 }
 
 .burbuja {
